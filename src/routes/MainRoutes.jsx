@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import HomePage from "../pages/HomePage";
-import AddProductPage from "../pages/AddProductPage";
-import EditProductPage from "../pages/EditProductPage";
 import MainLayouts from "../layouts/MainLayouts";
+import HomePage from "../pages/HomePage";
+import EditProductPage from "../pages/EditProductPage";
+import AddProductPage from "../pages/AddProductPage";
 
 function MainRoutes() {
   return (
