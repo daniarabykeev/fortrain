@@ -42,7 +42,7 @@ function ProductsContext({ children }) {
   }
 
   async function getOneProduct(id) {
-    const { data } = await axios(`API`);
+    const { data } = await axios(`${API}/${id}`);
     dispatch({
       type: ACTIONS.GET_ONE_PRODUCT,
       payload: data,
