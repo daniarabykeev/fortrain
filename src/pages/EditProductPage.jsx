@@ -22,7 +22,6 @@ function EditProductPage() {
       setProduct(oneProduct);
     }
   }, [oneProduct]);
-  console.log(oneProduct);
 
   function handleSubmit(e) {
     e.preventDefault();
