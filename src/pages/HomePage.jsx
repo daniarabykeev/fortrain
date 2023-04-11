@@ -13,7 +13,7 @@ function HomePage() {
     <div>
       {products.map((item) => {
         return (
-          <div key={item.id}>
+          <div key={item.id} style={{ border: "1px solid grey" }}>
             <h4>{item.title}</h4>
             <h4>{item.price}</h4>
             <button onClick={(e) => navigate(`/edit/${item.id}`)}>edit</button>
