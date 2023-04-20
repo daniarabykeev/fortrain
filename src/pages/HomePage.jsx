@@ -14,7 +14,7 @@ function HomePage() {
     <div>
       {products?.map((item) => {
         return (
-          <div>
+          <div key={item.id}>
             <h4>{item.title}</h4>
             <h5>{item.price}</h5>
             <button

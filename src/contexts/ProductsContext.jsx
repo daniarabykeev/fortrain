@@ -31,7 +31,7 @@ function ProductsContext({ children }) {
     });
   }
 
-  async function addProducts(newProduct) {
+  async function addProduct(newProduct) {
     await axios.post(`${API}`, newProduct);
     getProducts();
   }
@@ -58,7 +58,7 @@ function ProductsContext({ children }) {
     products: state.products,
     oneProduct: state.oneProduct,
     getProducts,
-    addProducts,
+    addProduct,
     deleteProduct,
     getOneProduct,
     editProduct,
