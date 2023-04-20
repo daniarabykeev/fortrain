@@ -12,9 +12,9 @@ const initialState = {
 function reducer(state, action) {
   switch (action.type) {
     case ACTIONS.GET_PRODUCTS:
-      return { ...state, products: payload.data };
+      return { ...state, products: action.payload };
     case ACTIONS.GET_ONE_PRODUCT:
-      return { ...state, oneProduct: payload.data };
+      return { ...state, oneProduct: action.payload };
     default:
       return state;
   }
