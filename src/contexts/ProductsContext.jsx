@@ -63,7 +63,11 @@ function ProductsContext({ children }) {
     getOneProduct,
     editProduct,
   };
-  return <productsContext value={value}>{children}</productsContext>;
+  return (
+    <productsContext.Provider value={value}>
+      {children}
+    </productsContext.Provider>
+  );
 }
 
 export default ProductsContext;
