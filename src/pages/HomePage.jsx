@@ -24,7 +24,7 @@ function HomePage() {
                 deleteProduct(item.id);
               }}
             >
-              x
+              delete
             </button>
           </div>
         );
