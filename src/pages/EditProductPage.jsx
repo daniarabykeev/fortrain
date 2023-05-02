@@ -60,7 +60,7 @@ function EditProductPage() {
             handleChange(e);
           }}
         />
-        <button>edit</button>
+        <button>edit product</button>
       </form>
     </div>
   );
