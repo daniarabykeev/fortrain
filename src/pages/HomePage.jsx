@@ -11,6 +11,7 @@ function HomePage() {
   }, []);
   return (
     <div>
+      <h2>Home Page</h2>
       {products?.map((item) => {
         return (
           <div key={item.id}>
