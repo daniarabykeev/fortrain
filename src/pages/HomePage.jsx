@@ -3,7 +3,8 @@ import { productsContext } from "../contexts/ProductsContext";
 import { useNavigate } from "react-router-dom";
 
 function HomePage() {
-  const { products, getProducts } = useContext(productsContext);
+  const { products, getProducts, deleteProduct } = useContext(productsContext);
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -24,7 +25,13 @@ function HomePage() {
             >
               edit
             </button>
-            <button>x</button>
+            <button
+              onClick={(e) => {
+                deleteProduct(item.id);
+              }}
+            >
+              x
+            </button>
           </div>
         );
       })}
