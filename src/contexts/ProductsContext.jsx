@@ -57,6 +57,7 @@ function ProductsContext({ children }) {
   const value = {
     products: state.products,
     oneProduct: state.oneProduct,
+    getProducts,
     addProduct,
     deleteProduct,
     getOneProduct,
